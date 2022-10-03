@@ -1,0 +1,12 @@
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#section-creer-compte {
+    margin-top: 30px;
+}
+
+.buttonSubmit {
+    border-radius: 30px;
+}

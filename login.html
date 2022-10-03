@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <main>
+    <header class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/twitter.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#">Contact</a>
+              <button type="button" class="btn btn-primary navbar-btn">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/pexels-brett-jordan-5417837.jpg" class="d-block w-100" alt="Photo Twitter">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pexels-freestocksorg-58639.jpg" class="d-block w-100" alt="Photo Twitter">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pexels-lisa-fotios-1092671.jpg" class="d-block w-100" alt="Photo Twitter">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="d-flex justify-content-center mt-3 mb-3">Bienvenue!</h1>
+    <section class="container row mx-auto mb-3">
+      <div class="card col-lg-6 col-md-12 mx-auto">
+        <h2 class="d-flex justify-content-center mt-3 mb-3"> Connectez-vous à Twitter</h2>
+        <div class="card-body">
+          <a class="btn btn-primary btn-border" href="#" role="button">Se connecter avec Google</a>
+          <a class="btn btn-secondary mt-3 btn-border" href="#" role="button">Se connecter avec Apple</a>
+          <div class="form-floating mt-5 mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Adresse email</label>
+            <div class="text-end fs-3 d-none" id="errorMessage1">
+              <p>Error</p>
+            </div>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            <div class="text-end fs-3 d-none" id="errorMessage2">
+              <p>Error</p>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary w-50 p-3 button-login" href="profile.html" role="button">Login</a>
+      </div>
+      <div class="card col-lg-5 col-md-12 mx-auto align-self-center">
+        <h2 class="d-flex justify-content-center mt-3 mb-3">Vous n'avez pas de compte ?</h2>
+        <a class="btn btn-primary w-50 p-3 button-login" href="inscription.html" role="button">Créer compte</a>
+        <button type="button" class="btn btn-danger w-50 mx-auto mb-3">Mot de passe oublié ?</button>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="loginVerif.js"></script>
+</html>
